@@ -1,4 +1,5 @@
 import './globals.css';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Sargis Simonyan Portfolio',
@@ -11,10 +12,10 @@ export default function RootLayout({ children }) {
       <body className="bg-gray-50 text-gray-900 font-sans">
         <header className="border-b border-gray-300 p-6">
           <nav className="max-w-5xl mx-auto flex gap-8">
-            <a href="/" className="hover:text-blue-600">Home</a>
-            <a href="/portfolio" className="hover:text-blue-600">Portfolio</a>
-            <a href="/about" className="hover:text-blue-600">About Me</a>
-            <a href="/contact" className="hover:text-blue-600">Contact</a>
+            <Link href="/" className="hover:text-blue-600">Home</Link>
+            <Link href="/portfolio" className="hover:text-blue-600">Portfolio</Link>
+            <Link href="/about" className="hover:text-blue-600">About Me</Link>
+            <Link href="/contact" className="hover:text-blue-600">Contact</Link>
           </nav>
         </header>
         <main className="">{children}</main>
