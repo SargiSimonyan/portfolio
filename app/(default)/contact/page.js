@@ -23,18 +23,22 @@ export default function Contact() {
           <p className="text-lg text-gray-700 mb-6 text-center">
             For contact you may to send me message           
           </p>
-          <form className="space-y-4">
+          <form 
+            action="https://formspree.io/f/mvgqwyan"
+            method="POST"
+            className="space-y-4"
+          >
             <div>
               <label className="block mb-1 font-medium">Name</label>
-              <input type="text" className="w-full border border-gray-300 p-3 rounded" placeholder="Your name" />
+              <input name="name" type="text" className="w-full border border-gray-300 p-3 rounded" placeholder="Your name" required />
             </div>
             <div>
               <label className="block mb-1 font-medium">Email</label>
-              <input type="email" className="w-full border border-gray-300 p-3 rounded" placeholder="you@example.com" />
+              <input name="email" type="email" className="w-full border border-gray-300 p-3 rounded" placeholder="you@example.com" required />
             </div>
             <div>
               <label className="block mb-1 font-medium">Message</label>
-              <textarea className="w-full border border-gray-300 p-3 rounded" rows="5" placeholder="Your message"></textarea>
+              <textarea name="message" className="w-full border border-gray-300 p-3 rounded" rows="5" placeholder="Your message" required></textarea>
             </div>
             <button type="submit" className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">Send Message</button>
           </form>
