@@ -1,5 +1,6 @@
 import './globals.css';
 import Link from 'next/link';
+import PageTransition from "@/components/PageTransition";
 
 export const metadata = {
   title: 'Sargis Simonyan Portfolio',
@@ -18,7 +19,11 @@ export default function RootLayout({ children }) {
             <Link href="/contact" className="hover:text-blue-600">Contact</Link>
           </nav>
         </header>
-        <main className="">{children}</main>
+        <main className="">
+          <PageTransition>
+            {children}
+          </PageTransition>
+        </main>
         <footer className="border-t border-gray-300 p-6 text-center text-sm text-gray-500">
           © 2025 Sargis Simonyan
         </footer>
