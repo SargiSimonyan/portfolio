@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-gray-50 text-gray-900 font-sans">
-        <header className="border-b border-gray-300 p-6">
-          <nav className="max-w-5xl mx-auto flex gap-8">
+      <header className="border-b flex justify-center border-gray-300 p-6">
+      <nav className="max-w-5xl mx-auto flex gap-8">
             <Link href="/" className="hover:text-blue-600">Home</Link>
             <Link href="/portfolio" className="hover:text-blue-600">Portfolio</Link>
             <Link href="/about" className="hover:text-blue-600">About Me</Link>

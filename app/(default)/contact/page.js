@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       <h3 className="text-3xl font-bold mb-6 ">Contact me</h3>
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-wrap">
         <div>
           <div className="flex gap-1 items-center mt-4">
             <FaEnvelope size={18} />
